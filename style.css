@@ -13,6 +13,8 @@ a {
 
 * {
   box-sizing: border-box;
+  /*Main Background Color*/
+  background-color: #f4cbff;
 }
 
 main {
@@ -22,6 +24,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+}
+.headerTitle{
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+  background-color:rgb(33,11,44);
 }
 
 .title {
@@ -115,12 +125,13 @@ main {
   margin: 1rem;
   padding: 0.5rem;
   text-align: left;
-  color: inherit;
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 500px;
+  background-color: rgb(33,11,44);
 }
 
 .cardNav:hover,
@@ -131,13 +142,14 @@ main {
 }
 
 .headerStyle {
-  background-color: rgb(127, 151, 224);
+  background-color: rgb(33,11,44);
   border-color: #000000;
   padding: 15px;
+  color: white;
 }
 
 .navStyle{
-  background-color: rgb(127, 151, 224);
+  background-color: rgb(33,11,44);
   border-color: #000000;
 }
 
