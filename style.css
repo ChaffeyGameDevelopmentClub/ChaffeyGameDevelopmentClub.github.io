@@ -31,6 +31,7 @@ main {
   line-height: 1.15;
   font-size: 4rem;
   text-align: center;
+  /*Title Bg Color*/
   background-color:rgb(33,11,44);
 }
 
