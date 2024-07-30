@@ -14,7 +14,7 @@ a {
 * {
   box-sizing: border-box;
   /*Main Background Color*/
-  background-color: #e9cef5;/*#f4cbff*/
+  background-color: #241e27;/*#f4cbff*/
 }
 
 main {
@@ -71,6 +71,8 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1200px;
+  border: 1px solid #919191;
+  border-radius: 10px;
 }
 
 .card {
@@ -79,7 +81,7 @@ main {
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #000000;
+  border: 1px solid #919191;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
@@ -87,8 +89,8 @@ main {
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #004ca3;
+  border-color: #004ca3;
 }
 
 .card h2 {
