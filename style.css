@@ -15,6 +15,7 @@ a {
   box-sizing: border-box;
   /*Main Background Color*/
   background-color: #241e27;/*#f4cbff*/
+  
 }
 
 main {
@@ -24,6 +25,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
   
 }
 .headerTitle{
@@ -124,7 +126,7 @@ main {
 }
 
 .cardNav {
-  margin: 1rem;
+  margin: .5rem;
   padding: 0.5rem;
   text-align: left;
   color: rgb(255, 255, 255);
