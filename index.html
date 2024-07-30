@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <!--Website Settings-->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -8,31 +9,26 @@
     <link rel="icon" type="image/x-icon" href="#" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <header class="headerStyle">
-    <!--Top Header-->
-    <h1 class="headerTitle">Chaffey Game Dev Club</h1>
-    <p></p>
-  </header>
+  <!--Nav links-->
   <nav class="navStyle">
+    <p style="padding-top: 1rem"></p>
     <a href="index.html" class="cardNav"> Home Page </a>
     <a href="about.html" class="cardNav"> About Us </a>
     <a href="games.html" class="cardNav"> Games </a>
     <a href="gamejam.html" class="cardNav"> Game Jams </a>
     <a href="faq.html" class="cardNav"> FAQ </a>
     <a href="https://discord.gg/5h9ZerqHqC" class="cardNav"> Discord </a>
-    <p></p>
-    <hr />
+    <p style="padding-bottom: 1rem"></p>
   </nav>
-
+  <!--Temp style-->
   <style>
     .bannerJoin {
       background-image: url("Assets/cat-typing.gif");
       background-size: cover;
       width: 100vw;
       text-align: center;
-      padding: 10rem 5rem;
-      margin-top: 5rem;
-      margin-bottom: 5rem;
+      padding: 13rem 5rem;
+      margin-bottom: 3rem;
       font-size: 200%;
     }
     .link {
@@ -47,24 +43,9 @@
   <!--Home Page-->
   <body>
     <main>
-      <!--Most Recent Game-->
-      <section>
-        <h1 style="font-size: 200%; text-align: center">
-          Check out our most recent game!
-        </h1>
-        <p style="text-align: center; font-size: 180%; font-family: serif">
-          Eyes of the Inferno
-        </p>
-        <a href="https://chaffeygamedev.itch.io/eyes-of-the-inferno">
-          <img
-            src="Game Img/Inferno.png"
-            alt="Click to play!"
-            style="width: 60vw; height: auto; max-width: 1000px"
-          />
-        </a>
-      </section>
       <!--Sign up for Game Jams!-->
       <section class="bannerJoin">
+        <h1 class="headerTitle">Chaffey Game Dev Club</h1>
         <a
           href="gamejam.html"
           class="link"
@@ -83,9 +64,94 @@
           Discord!
         </a>
       </section>
+      <!--About the club-->
+      <section>
+        <p style="font-size: 25px;text-align: center;margin-bottom: 3rem;">
+          Game development is the processes of creating video games but many don't know all the aspects that go into it. 
+          Programming is one of these with lines of code and text a person can make a world come to live. 
+          Art can be expressed lively and so creatively with different art styles and in 2-D or 3-D art takes the breath away from players.
+        </p>
+      </section>
+      <!--Most Recent Game-->
+      <section>
+        <h1 style="font-size: 200%; text-align: center">
+          Check out our most recent game!
+        </h1>
+        <p style="text-align: center; font-size: 180%; font-family: serif">
+          Eyes of the Inferno
+        </p>
+        <a href="https://chaffeygamedev.itch.io/eyes-of-the-inferno">
+          <img
+            src="Game Img/Inferno.png"
+            alt="Click to play!"
+            style="width: 60vw; height: auto; max-width: 1000px"
+          />
+        </a>
+      </section>
 
       <!--Games List-->
-      <section></section>
+      <section class="grid">
+        <!--Games-->
+        <!--Fire Flight-->
+        <a href="https://chaffeygamedev.itch.io/fire-flight" class="card">
+          <img src="Game Img\Fireflight.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">Fire Flight</h1>
+          <p style="max-width: 240px"></p>
+        </a>
+        <!--Dr Radient-->
+        <a href="https://chaffeygamedev.itch.io/dr-radiant" class="card">
+          <img src="Game Img\DrRadient.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">Dr. Radiant</h1>
+          <p style="max-width: 240px">Made in a short game jam with 8 people</p>
+        </a>
+        <!--Kowboy Kitty-->
+        <a href="https://chaffeygamedev.itch.io/kowboy-kitty" class="card">
+          <img src="Game Img\KowboyKitty.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">Kowboy Kitty</h1>
+          <p style="max-width: 240px">
+            Cool cat game! Made in the 2024 Global Game Jam
+          </p>
+        </a>
+        <!--Banana Killer-->
+        <a href="https://chaffeygamedev.itch.io/killerbanana" class="card">
+          <img src="Game Img\killerBanana.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">Banana Killer</h1>
+          <p style="max-width: 240px">
+            This game was created for the Nokia 3310 Game Jam of 2023.
+          </p>
+        </a>
+        <a href="https://chaffeygamedev.itch.io/seed-of-light" class="card">
+          <img src="Game Img\SeedofLight.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">Seed of Light</h1>
+          <p style="max-width: 240px">
+            Seed of Light is a short puzzle platformer game where you traverse
+            obstacles and enemies and utilize a few seed-planting abilities to
+            create terrain to proceed to the end and obtain the golden acorn!
+          </p>
+        </a>
+        <a
+          href="https://chaffeygamedev.itch.io/easter-bunny-dating-sim"
+          class="card"
+        >
+          <img src="Game Img\EasterBunny.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">
+            Easter Bunny Dating Sim
+          </h1>
+          <p style="max-width: 240px">Idk dawg</p>
+        </a>
+        <a
+          href="https://chaffeygamedev.itch.io/spacecat-knifeparty"
+          class="card"
+        >
+          <img src="Game Img\SpaceCat.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">
+            SpaceCat KnifeParty
+          </h1>
+          <p style="max-width: 240px">
+            A short retro-style space cat shooter game.
+          </p>
+        </a>
+      </section>
     </main>
   </body>
 </html>
