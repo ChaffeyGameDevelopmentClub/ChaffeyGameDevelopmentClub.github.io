@@ -1,48 +1,120 @@
 <!DOCTYPE html>
 <html>
+  <!--Website Settings-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CGDC</title>
+    <!--Enter Ico-->
+    <link rel="icon" type="image/x-icon" href="#" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>CGDC</title>
-  <!--Enter Ico-->
-  <link rel="icon" type="image/x-icon" href="#">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<header class="headerStyle">
-  <!--Top Headder-->
-  <h1 class="headerTitle">Chaffey Game Dev Club</h1>
-  <p></p>
-</header>
-<nav class="navStyle">
-  <a href="index.html" class="cardNav">
-    Home Page
-  </a>
-  <a href="about.html" class="cardNav">
-    About Us
-  </a>
-  <a href="games.html" class="cardNav">
-    Games
-  </a>
-  <a href="gamejam.html" class="cardNav">
-    Game Jam
-  </a>
-  <a href="faq.html" class="cardNav">
-    FAQ
-  </a>
-  <a href="https://discord.gg/5h9ZerqHqC" class="cardNav">
-    Discord
-  </a>
-  <p></p>
-  <hr>
-</nav>
+  <!--Nav links-->
 
-<body>
-  <main>
-    
-
-  </main>
-</body>
-
-
+  <div
+    class="headerStyle"
+    style="
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: row;
+    "
+  >
+    <!--Nav inner-->
+    <nav class="navStyle">
+      <div style="float: left; padding-left: 3rem; min-width: 33vw">
+        <a href="index.html" class="cardNav"> Home Page </a>
+        <a href="about.html" class="cardNav"> About Us </a>
+        <a href="games.html" class="cardNav"> Games </a>
+        <a href="gamejam.html" class="cardNav"> Game Jams </a>
+        <a href="faq.html" class="cardNav"> FAQ </a>
+        <a href="https://discord.gg/5h9ZerqHqC" class="cardNav"> Discord </a>
+      </div>
+    </nav>
+    <!--nav Image-->
+    <div style="min-width: 33vw">
+      <section style="display: grid; justify-content: center">
+        <img
+          src="Assets/benny and sam.jpg"
+          width="150vw"
+          height="100vw"
+          style="padding: 10px"
+        />
+      </section>
+    </div>
+    <!--Nav Empty-->
+    <div style="float: right; min-width: 33vw"></div>
+  </div>
+  <!--Home Page-->
+  <body>
+    <main>
+      <!--Games List-->
+      <h1 class="headerSize" style="padding-bottom: 1rem">
+        Here is a list of our recent games!
+      </h1>
+      <section class="grid">
+        <!--Games-->
+        <!--Fire Flight-->
+        <a href="https://chaffeygamedev.itch.io/fire-flight" class="card">
+          <img src="Game Img\Fireflight.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">Fire Flight</h1>
+          <p style="max-width: 240px"></p>
+        </a>
+        <!--Dr Radiant-->
+        <a href="https://chaffeygamedev.itch.io/dr-radiant" class="card">
+          <img src="Game Img\DrRadient.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">Dr. Radiant</h1>
+          <p style="max-width: 240px">Made in a short game jam with 8 people</p>
+        </a>
+        <!--Kowboy Kitty-->
+        <a href="https://chaffeygamedev.itch.io/kowboy-kitty" class="card">
+          <img src="Game Img\KowboyKitty.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">Kowboy Kitty</h1>
+          <p style="max-width: 240px">
+            Cool cat game! Made in the 2024 Global Game Jam
+          </p>
+        </a>
+        <!--Banana Killer-->
+        <a href="https://chaffeygamedev.itch.io/killerbanana" class="card">
+          <img src="Game Img\killerBanana.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">Banana Killer</h1>
+          <p style="max-width: 240px">
+            This game was created for the Nokia 3310 Game Jam of 2023.
+          </p>
+        </a>
+        <a href="https://chaffeygamedev.itch.io/seed-of-light" class="card">
+          <img src="Game Img\SeedofLight.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">Seed of Light</h1>
+          <p style="max-width: 240px">
+            Seed of Light is a short puzzle platformer game where you traverse
+            obstacles and enemies and utilize a few seed-planting abilities to
+            create terrain to proceed to the end and obtain the golden acorn!
+          </p>
+        </a>
+        <a
+          href="https://chaffeygamedev.itch.io/easter-bunny-dating-sim"
+          class="card"
+        >
+          <img src="Game Img\EasterBunny.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">
+            Easter Bunny Dating Sim
+          </h1>
+          <p style="max-width: 240px">Idk dawg</p>
+        </a>
+        <a
+          href="https://chaffeygamedev.itch.io/spacecat-knifeparty"
+          class="card"
+        >
+          <img src="Game Img\SpaceCat.png" width="250" height="250" />
+          <h1 style="text-align: center; max-width: 240px">
+            SpaceCat KnifeParty
+          </h1>
+          <p style="max-width: 240px">
+            A short retro-style space cat shooter game.
+          </p>
+        </a>
+      </section>
+    </main>
+  </body>
 </html>
