@@ -39,6 +39,23 @@
     .link:active {
       color: #ffffffad;
     }
+    .scrollingImageContainer{
+      width: 100vw;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .scrollingImage{
+      display: inline-block;
+      animation: scroll 10s linear infinite;
+    }
+    @keyframes scroll{
+      from{
+        transform: translateX(100%);
+      }
+      to{
+        transform: translateX(-100%);
+      }
+    }
   </style>
   <!--Home Page-->
   <body>
@@ -71,6 +88,9 @@
           Programming is one of these with lines of code and text a person can make a world come to live. 
           Art can be expressed lively and so creatively with different art styles and in 2-D or 3-D art takes the breath away from players.
         </p>
+        <div class="scrollingImageContainer">
+          <img src="Assets/nicebenny.jpg" style="width: 200vw;" class="scrollingImage">
+        </div>
         <img src="Assets/nicebenny.jpg" width="700vw">
         <img src="Assets/scarybenny.jpg" width="600vw">
         <img src="Assets/Samwalking.jpg" width="600vw">
