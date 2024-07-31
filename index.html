@@ -66,27 +66,88 @@
       </section>
       <!--About the club-->
       <section>
-        <p style="font-size: 30px; text-align: center">About us!</p>
-        <p
-          style="
-            font-size: 25px;
-            text-align: center;
-            margin-bottom: 3rem;
-            padding: 2rem;
-          "
-        >
-          <img
-            src="Assets/nicebenny.jpg"
-            style="float: left; width: 30%; height: auto"
-          />
-          Game development is the processes of creating video games but many
-          don't know all the aspects that go into it. Programming is one of
-          these with lines of code and text a person can make a world come to
-          live. Art can be expressed lively and so creatively with different art
-          styles and in 2-D or 3-D art takes the breath away from players.
-        </p>
-        <p style="padding: 3rem"></p>
+        <p style="font-size: 35px; text-align: center">About us!</p>
+        <article>
+          <div
+            class="slideshow-container"
+            style="float: left; background-color: transparent"
+          >
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="Assets/nicebenny.jpg" style="width: 35vw" />
+              <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="Assets/scarybenny.jpg" style="width: 35vw" />
+              <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="Assets/benny and sam.jpg" style="width: 35vw" />
+              <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div style="text-align: center; float: left; padding-top: 1rem">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides((slideIndex += n));
+            }
+
+            function currentSlide(n) {
+              showSlides((slideIndex = n));
+            }
+
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = slides.length;
+              }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+            }
+          </script>
+        </article>
+        <article>
+          <p
+            class="textSize"
+            style="text-align: center; margin-bottom: 3rem; padding: 2rem"
+          >
+            Game development is the processes of creating video games but many
+            don't know all the aspects that go into it. Programming is one of
+            these with lines of code and text a person can make a world come to
+            live. Art can be expressed lively and so creatively with different
+            art styles and in 2-D or 3-D art takes the breath away from players.
+          </p>
+          <p style="padding: 3rem"></p>
+        </article>
       </section>
+
       <!--Most Recent Game-->
       <section>
         <h1 style="font-size: 200%; text-align: center">
