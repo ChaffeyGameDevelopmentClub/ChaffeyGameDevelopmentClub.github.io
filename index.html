@@ -39,23 +39,6 @@
     .link:active {
       color: #ffffffad;
     }
-    .scrollingImageContainer{
-      width: 100vw;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-    .scrollingImage{
-      display: inline-block;
-      animation: scroll 10s linear infinite;
-    }
-    @keyframes scroll{
-      from{
-        transform: translateX(100%);
-      }
-      to{
-        transform: translateX(-100%);
-      }
-    }
   </style>
   <!--Home Page-->
   <body>
@@ -83,18 +66,26 @@
       </section>
       <!--About the club-->
       <section>
-        <p style="font-size: 25px;text-align: center;margin-bottom: 3rem;">
-          Game development is the processes of creating video games but many don't know all the aspects that go into it. 
-          Programming is one of these with lines of code and text a person can make a world come to live. 
-          Art can be expressed lively and so creatively with different art styles and in 2-D or 3-D art takes the breath away from players.
+        <p style="font-size: 30px; text-align: center">About us!</p>
+        <p
+          style="
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+          "
+        >
+          <img
+            src="Assets/nicebenny.jpg"
+            style="float: left; width: 30%; height: auto"
+          />
+          Game development is the processes of creating video games but many
+          don't know all the aspects that go into it. Programming is one of
+          these with lines of code and text a person can make a world come to
+          live. Art can be expressed lively and so creatively with different art
+          styles and in 2-D or 3-D art takes the breath away from players.
         </p>
-        <div class="scrollingImageContainer">
-          <img src="Assets/nicebenny.jpg" style="width: 200vw;" class="scrollingImage">
-        </div>
-        <img src="Assets/nicebenny.jpg" width="700vw">
-        <img src="Assets/scarybenny.jpg" width="600vw">
-        <img src="Assets/Samwalking.jpg" width="600vw">
-        
+        <p style="padding: 3rem"></p>
       </section>
       <!--Most Recent Game-->
       <section>
