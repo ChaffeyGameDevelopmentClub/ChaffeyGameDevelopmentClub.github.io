@@ -81,7 +81,6 @@ main {
   /*border: 1px solid #919191;
   border-radius: 10px;*/
   transition: color 0.15s ease, border-color 0.15s ease;
-
 }
 
 .card:hover,
@@ -288,20 +287,20 @@ main {
   }
 }
 
-@media (max-width:600px){
-  .headerSize{
+@media (max-width: 600px) {
+  .headerSize {
     font-size: 30px;
   }
-  .textSize{
+  .textSize {
     font-size: 20px;
   }
 }
 
-@media (min-width:601px){
-  .headerSize{
+@media (min-width: 601px) {
+  .headerSize {
     font-size: 35px;
   }
-  .textSize{
+  .textSize {
     font-size: 25px;
   }
 }
