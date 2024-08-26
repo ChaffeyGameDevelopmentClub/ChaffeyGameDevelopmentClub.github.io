@@ -1,79 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <!--Website Settings-->
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>CGDC</title>
-    <!--Enter Ico-->
-    <link rel="icon" type="image/x-icon" href="#" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+<!--Website Settings-->
 
-  <!--Nav links-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>CGDC</title>
+  <!--Enter Ico-->
+  <link rel="icon" type="image/x-icon" href="#" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-  <div
-    class="headerStyle"
-    style="
+<!--Nav links-->
+
+<div class="headerStyle" style="
       display: flex;
       justify-content: center;
       align-content: center;
       flex-direction: row;
-    "
-  >
-    <!--Nav inner-->
-    <nav class="navStyle">
-      <div style="float: left; padding-left: 3rem; min-width: 33vw">
-        <a href="index.html" class="cardNav"> Home Page </a>
-        <a href="about.html" class="cardNav"> About Us </a>
-        <a href="games.html" class="cardNav"> Games </a>
-        <a href="gamejam.html" class="cardNav"> Game Jams </a>
-        <a href="faq.html" class="cardNav"> FAQ </a>
-        <a href="https://discord.gg/5h9ZerqHqC" class="cardNav"> Discord </a>
-      </div>
-    </nav>
-    <!--nav Image-->
-    <div style="min-width: 33vw">
-      <section style="display: grid; justify-content: center">
-        <img
-          src="Assets/GDClogo.png"
-          width="125vw"
-          height="125vw"
-          style="padding: 10px"
-        />
-      </section>
+    ">
+  <!--Nav inner-->
+  <nav class="navStyle">
+    <div style="float: left; padding-left: 3rem; min-width: 33vw">
+      <a href="index.html" class="cardNav"> Home Page </a>
+      <a href="about.html" class="cardNav"> About Us </a>
+      <a href="games.html" class="cardNav"> Games </a>
+      <a href="gamejam.html" class="cardNav"> Game Jams </a>
+      <a href="faq.html" class="cardNav"> FAQ </a>
+      <a href="https://discord.gg/5h9ZerqHqC" class="cardNav"> Discord </a>
     </div>
-    <!--Nav Empty-->
-    <div style="float: right; min-width: 33vw"></div>
+  </nav>
+  <!--nav Image-->
+  <div style="min-width: 33vw">
+    <section style="display: grid; justify-content: center">
+      <img src="Assets/GDClogo.png" width="125vw" height="125vw" style="padding: 10px" />
+    </section>
   </div>
-  <!--Home Page-->
-  <body>
-    <main>
-      <p>
-        Not finished yet :(
-      </p>
-      <!--Next Game Jam-->
-      <section>
-        <h1>
-          Sign up for our next Game Jam!
-        </h1>
-        <p>
-          
-        </p>
-      </section>
-      <!--Footer-->
-      <section>
-        <footer>
-          <nav
-            style="
+  <!--Nav Empty-->
+  <div style="float: right; min-width: 33vw"></div>
+</div>
+<!--Home Page-->
+
+<body>
+  <main>
+    <section>
+      <iframe src="https://embed.styledcalendar.com/#FLWan9aXsa82WxGCxFha" title="Styled Calendar"
+        class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+      <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+    </section>
+    <!--Footer-->
+    <section>
+      <footer>
+        <nav style="
               display: flex;
               flex-direction: row;
               padding-top: 2rem;
               padding-bottom: 2rem;
-            "
-          >
-            <!--Instagram-->
-            <!--
+            ">
+          <!--Instagram-->
+          <!--
                 <section>
                 <a
                   href="#"
@@ -83,28 +68,22 @@
                 </a>
               </section>
               -->
-            <!--Discord-->
-            <section>
-              <a href="https://discord.gg/5h9ZerqHqC" class="card">
-                <img
-                  src="Assets/discord-white-icon.webp"
-                  width="50"
-                  height="50"
-                />
-              </a>
-            </section>
-            <!--Github-->
-            <section>
-              <a
-                href="https://github.com/ChaffeyGameDevelopmentClub"
-                class="card"
-              >
-                <img src="Assets/Github.png" width="50" height="50" />
-              </a>
-            </section>
-          </nav>
-        </footer>
-      </section>
-    </main>
-  </body>
+          <!--Discord-->
+          <section>
+            <a href="https://discord.gg/5h9ZerqHqC" class="card">
+              <img src="Assets/discord-white-icon.webp" width="50" height="50" />
+            </a>
+          </section>
+          <!--Github-->
+          <section>
+            <a href="https://github.com/ChaffeyGameDevelopmentClub" class="card">
+              <img src="Assets/Github.png" width="50" height="50" />
+            </a>
+          </section>
+        </nav>
+      </footer>
+    </section>
+  </main>
+</body>
+
 </html>
