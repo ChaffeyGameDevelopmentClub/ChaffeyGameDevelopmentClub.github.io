@@ -75,7 +75,10 @@ main {
 .card {
   margin: 1rem;
   padding: 1.5rem;
+
+  /* idk if this will break something later lol sorry future person <3 my name is Frederico so you have someone to blame <3
   text-align: left;
+  */
   color: inherit;
   text-decoration: none;
   /*border: 1px solid #919191;
@@ -102,13 +105,14 @@ main {
   line-height: 1.5;
 }
 
+/* Frederico here again, this shit fucking with my vibes (idk how else fix my problemo so I give you one sorry gang <3)
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
 }
-
+*/
 .cardNon {
   margin: 1rem;
   padding: 0.5rem;
