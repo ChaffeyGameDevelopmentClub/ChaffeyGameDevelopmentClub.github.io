@@ -191,11 +191,7 @@ a {
 }
 /*#endregion*/
 
-
-
-
-
-/* Slideshow container */
+/*#region Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -282,6 +278,7 @@ a {
     opacity: 1;
   }
 }
+/*#endregion*/
 
 /* #region Media Queries */
 /* For mobile phones: */
