@@ -43,22 +43,6 @@ main {
 /*#endregion*/
 
 /*#region Header*/
-.headerTitle {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  text-align: center;
-  background-color: transparent;
-  padding-bottom: 1rem;
-}
-.headerStyle {
-  padding: 15px;
-}
-
-.navStyle {
-  background-color: #241e27;
-  border-color: #000000;
-}
 .headerStyle {
   background-color: var(--color3);
 }
@@ -120,7 +104,6 @@ a {
   margin-right: auto; 
   width: 70%;
 }
-
 /*#endregion*/
 
 /*#region About us junk*/
@@ -192,6 +175,7 @@ a {
 /*#endregion*/
 
 /*#region Cards*/
+/*Card*/
 .card {
   margin: 1rem;
   padding: 1.5rem;
