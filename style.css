@@ -1,3 +1,4 @@
+/*#region Main*/
 html,
 body {
   padding: 0;
@@ -5,18 +6,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
   /*Main Background Color*/
   background-color: #241e27; /*#f4cbff*/
 }
-
 main {
   /*padding: 4rem 2rem;*/
   flex: 1;
@@ -26,6 +20,8 @@ main {
   align-items: center;
   color: #ffffff;
 }
+/*#endregion*/
+/*#region Header*/
 .headerTitle {
   margin: 0;
   line-height: 1.15;
@@ -34,7 +30,65 @@ main {
   background-color: transparent;
   padding-bottom: 1rem;
 }
+.headerStyle {
+  padding: 15px;
+}
 
+.navStyle {
+  background-color: #241e27;
+  border-color: #000000;
+}
+
+/*#endregion*/
+/*#region Containers*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+/*#endregion*/
+/*#region About us junk*/
+.aboutMePic {
+  float: left;
+  width: 30%;
+  padding: 0.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 800px;
+}
+
+.aboutMeDec {
+  padding: 25px;
+  float: left;
+  width: 60%;
+  border: #000000;
+  border-radius: 1px;
+}
+
+.aboutMeLink {
+  padding: 25px;
+  float: right;
+  width: 10%;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 800px;
+}
+/*#endregion*/
+/*#region idk tbh*/
 .title {
   margin: 0;
   line-height: 1.15;
@@ -64,14 +118,9 @@ main {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
+/*#endregion*/
 
-.grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-}
-
+/*#region Cards*/
 .card {
   margin: 1rem;
   padding: 1.5rem;
@@ -86,25 +135,21 @@ main {
   transition: color 0.15s ease, border-color 0.15s ease;
   background-color: inherit;
 }
-
 .card:hover,
 .card:focus,
 .card:active {
   color: #004ca3;
   border-color: #004ca3;
 }
-
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
 }
-
 .card p {
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
 }
-
 /* Frederico here again, this shit fucking with my vibes (idk how else fix my problemo so I give you one sorry gang <3)
 @media (max-width: 600px) {
   .grid {
@@ -144,56 +189,11 @@ main {
   color: #0070f3;
   border-color: #0070f3;
 }
+/*#endregion*/
 
-.headerStyle {
-  padding: 15px;
-}
 
-.navStyle {
-  background-color: #241e27;
-  border-color: #000000;
-}
 
-.aboutMePic {
-  float: left;
-  width: 30%;
-  padding: 0.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 800px;
-}
 
-.aboutMeDec {
-  padding: 25px;
-  float: left;
-  width: 60%;
-  border: #000000;
-  border-radius: 1px;
-}
-
-.aboutMeLink {
-  padding: 25px;
-  float: right;
-  width: 10%;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 800px;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
 
 /* Slideshow container */
 .slideshow-container {
@@ -280,33 +280,6 @@ main {
   }
   to {
     opacity: 1;
-  }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 600px) {
-  .headerSize {
-    font-size: 30px;
-  }
-  .textSize {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 601px) {
-  .headerSize {
-    font-size: 35px;
-  }
-  .textSize {
-    font-size: 25px;
   }
 }
 
