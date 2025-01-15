@@ -92,14 +92,37 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.code {
+  background: #a5a0a0;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
 .grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 20px;
+  justify-items: center;
+}
+.gridSpan{
+  grid-column: 1/4;
+  width: 100%;
+}
+.gridExpand{
+  display: float;
+}
+.center{
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 70%;
 }
 
 /*#endregion*/
+
 /*#region About us junk*/
 .aboutMePic {
   float: left;
@@ -135,6 +158,7 @@ a {
   max-width: 800px;
 }
 /*#endregion*/
+
 /*#region idk tbh*/
 .title {
   margin: 0;
@@ -171,22 +195,19 @@ a {
 .card {
   margin: 1rem;
   padding: 1.5rem;
-
-  /* idk if this will break something later lol sorry future person <3 my name is Frederico so you have someone to blame <3
   text-align: left;
-  */
   color: inherit;
   text-decoration: none;
-  /*border: 1px solid #919191;
-  border-radius: 10px;*/
+  border: 1px solid var(--color5);
+  border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  background-color: inherit;
+  max-width: 500px;
 }
 .card:hover,
 .card:focus,
 .card:active {
-  color: #004ca3;
-  border-color: #004ca3;
+  color: var(--color1);
+  border-color: var(--color1);
 }
 .card h2 {
   margin: 0 0 1rem 0;
@@ -197,44 +218,59 @@ a {
   font-size: 1.25rem;
   line-height: 1.5;
 }
-/* Frederico here again, this shit fucking with my vibes (idk how else fix my problemo so I give you one sorry gang <3)
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-*/
-.cardNon {
+/*Card Non*/
+.cardNon{
   margin: 1rem;
   padding: 0.5rem;
-  text-align: center;
+  text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #000000;
+  border: 1px solid var(--color5);
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 800px;
 }
-
+/*Card Nav*/
 .cardNav {
-  margin: 0.5rem;
+  margin: 1rem;
   padding: 0.5rem;
   text-align: left;
-  color: rgb(255, 255, 255);
+  color: var(--color5);
   text-decoration: none;
-  /*border: 1px solid #ffffff;
-  border-radius: 10px;*/
+  border: 1px solid var(--color5);
+  border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 500px;
-  background-color: transparent;
 }
-
 .cardNav:hover,
 .cardNav:focus,
-.cardNav:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.cardNav:active{
+  color: var(--color1);
+  border-color: var(--color1);
+}
+/*Card Project*/
+.cardProject{
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid var(--color5);
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  
+
+  position: relative;
+  top: 0px;
+  transition: all 0.3s ease-out;
+
+}
+.cardProject:hover,
+.cardProject:focus,
+.cardProject:active {
+  color: var(--color1);
+  border-color: var(--color1);
+  top: -6px;
 }
 /*#endregion*/
 
