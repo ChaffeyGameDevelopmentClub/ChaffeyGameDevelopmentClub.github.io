@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "Tammys Tamowatches",
+    "Link": "https://chaffeycomputerscienceclub.github.io/HTML/newSignup",
+    "Img": "../Images/TammysTamoWatches.png",
+    "Dec": "A Small project intended to be a life organizer mixed with game elements. Made with HTML, CSS, and Javascript. It also included database elements using Firebase."
+  },
+  {
+    "Name": "Kowboy kitty",
+    "Link": "https://chaffeygamedev.itch.io/kowboy-kitty",
+    "Img": "../Images/TammysTamoWatches.png",
+    "Dec": "Our entry for the Global Game Jam 2024."
+  }
+]
