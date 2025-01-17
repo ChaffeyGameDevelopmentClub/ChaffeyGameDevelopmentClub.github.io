@@ -31,28 +31,28 @@
     "Name": "Banana Killer",
     "Link": "https://github.com/ChaffeyGameDevelopmentClub/BananaKiller",
     "Img": "../Assets/GameIMG/killerBanana.png",
-    "Dec": "Swap dimensions to open a path away from the evil banana man", 
+    "Dec": "Swap dimensions to open a path away from the evil banana man",
     "Year": "2023"
   },
   {
-    "Name":"Seed Of Light",
-    "Link":"https://github.com/ChaffeyGameDevelopmentClub/SeedOfLight",
-    "Img":"../Assets/GameIMG/SeedofLight.png",
-    "Dec":"A 2D platformer with a focus on puzzle solving.",
-    "Year":"2023"
+    "Name": "Seed Of Light",
+    "Link": "https://github.com/ChaffeyGameDevelopmentClub/SeedOfLight",
+    "Img": "../Assets/GameIMG/SeedofLight.png",
+    "Dec": "A 2D platformer with a focus on puzzle solving.",
+    "Year": "2023"
   },
   {
-    "Name":"Easter Bunny Dating Sim",
-    "Link":"https://github.com/ChaffeyGameDevelopmentClub/EasterBunnyDatingSim",
-    "Img":"../Assets/GameIMG/EasterBunny.png",
-    "Dec":"Idk dawg",
-    "Year":"2023"
+    "Name": "Easter Bunny Dating Sim",
+    "Link": "https://github.com/ChaffeyGameDevelopmentClub/EasterBunnyDatingSim",
+    "Img": "../Assets/GameIMG/EasterBunny.png",
+    "Dec": "Idk dawg",
+    "Year": "2023"
   },
   {
-    "Name":"SpaceCat KnifeParty",
-    "Link":"https://github.com/ChaffeyGameDevelopmentClub/SpaceCatKnifeParty",
-    "Img":"../Assets/GameIMG/SpaceCat.png",
-    "Dec":"Retro-style space cat shooter game",
-    "Year":"2023"
+    "Name": "SpaceCat KnifeParty",
+    "Link": "https://github.com/ChaffeyGameDevelopmentClub/SpaceCatKnifeParty",
+    "Img": "../Assets/GameIMG/SpaceCat.png",
+    "Dec": "Retro-style space cat shooter game",
+    "Year": "2023"
   }
 ]
