@@ -50,18 +50,54 @@ function expandProject(project) {
   if (linkCont.classList.contains("gridSpan")) {
     //return to normal
     linkCont.classList.remove("gridSpan");
-  }
-  else {
+  } else {
     //expand
     //linkCont.classList.add("gridSpan")
     //Adding new content
   }
-
-
 }
 
+//most recent game
+async function recentGame() {
+  try {
+    const response = await fetch("../JS/json/projects.json");
+    const projectArray = await response.json();
+    console.log("recentGame");
+    const container = document.getElementById("RecentGame");
+    project = projectArray[0];
+    //Math to center remaining links
+    const amount = projectArray.length;
+    console.log(amount);
+
+    //Link box
+    const linkCont = document.createElement("a");
+    //linkCont.href = project.Link;
+    linkCont.className = "cardProject";
+    //Used for buttons
+    linkCont.id = project.Name;
+    //Link
+    linkCont.href = project.Link;
+    //Img
+    const img = document.createElement("img");
+    img.src = project.Img;
+    img.className = "center";
+    //H2
+    const h2 = document.createElement("h2");
+    h2.innerHTML = project.Name;
+    //P
+    const p = document.createElement("p");
+    p.innerHTML = project.Dec;
+    //Appending
+    linkCont.appendChild(img);
+    linkCont.appendChild(h2);
+    linkCont.appendChild(p);
+    //Appending
+    container.appendChild(linkCont);
+  } catch (error) {
+    console.error("Error Loading Products: ", error);
+  }
+}
 
 //run on load
 getProjects();
-
-
+recentGame();
