@@ -13,18 +13,20 @@
 
   <!--#region Nav links-->
   <!--Header-->
-  <header class="col-12 headerStyle inFront">
-      <a href="homepage.html" class="card center">
-        <img
-          src="../Assets/GDClogo.png"
-          width="125vw"
-          height="125vw"
-          style="padding: 10px; background-color: inherit"
-        />
-      </a>
+  <header class="headerStyle col-12 centerFlex">
+    <a href="homepage.html" class="">
+      <img
+        src="../Assets/GDClogo.png"
+        width="125vw"
+        height="125vw"
+        object-fit="contain"
+        style="background-color: inherit"
+      />
+    </a>
   </header>
+  <row></row>
   <!--Nav inner-->
-  <nav class="headerStyle">
+  <nav class="navStyle">
     <a href="homepage.html" class="cardNav"> Home</a>
     <a href="games.html" class="cardNav"> Games </a>
     <a href="calendar.html" class="cardNav"> Calendar </a>
@@ -38,12 +40,12 @@
   <!--from cover to 100%-->
   <style>
     .bannerJoin {
-      background-image: url("Assets/cat-typing.gif");
+      background-image: url("../Assets/cat-typing.gif");
       background-size: 100%;
-      width: 100vw;
+      width: 100%;
       text-align: center;
-      padding: 13rem 5rem;
-      margin-bottom: 1rem;
+      padding: 8rem 5rem;
+      margin-bottom: 3rem;
       font-size: 200%;
     }
     .link {
@@ -61,7 +63,7 @@
     <main>
       <!--Sign up for Game Jams!-->
       <!--#region Banner-->
-      <section class="bannerJoin">
+      <section class="bannerJoin col-12">
         <h1 class="headerTitle">Chaffey Game Dev Club</h1>
         <a style="background-color: transparent">Check out our </a>
         <a
@@ -81,7 +83,7 @@
         </a>
       </section>
       <!--#endregion-->
-
+      <row></row>
       <!--About the club-->
       <section
         style="
@@ -98,37 +100,49 @@
             style="float: left; background-color: transparent"
           >
             <div class="mySlides fade">
-              <div class="numbertext">1 / 5</div>
+              <div class="numbertext">1 / 4</div>
               <img
-                src="Assets/FrontpagePhotos/IMG_0534.jpg"
-                style="width: 35vw"
+                src="../Assets/FrontpagePhotos/IMG_0534.jpg"
+                style="width: 35vw;
+                height: 30vh;
+                object-fit: contain;
+                padding: 1rem;"
               />
               <div class="text">Slime Sprite Sheet</div>
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">2 / 5</div>
+              <div class="numbertext">2 / 4</div>
               <img
-                src="Assets/FrontpagePhotos/IMG_0535.jpg"
-                style="width: 35vw"
+                src="../Assets/FrontpagePhotos/IMG_0535.jpg"
+                style="width: 35vw;
+                height: 30vh;
+                object-fit: contain;
+                padding: 1rem;"
               />
               <div class="text">Coder with notes</div>
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">3 / 5</div>
+              <div class="numbertext">3 / 4</div>
               <img
-                src="Assets/FrontpagePhotos/IMG_0536.jpg"
-                style="width: 35vw"
+                src="../Assets/FrontpagePhotos/IMG_0536.jpg"
+                style="width: 35vw;
+                height: 30vh;
+                object-fit: contain;
+                padding: 1rem;"
               />
               <div class="text">Really cool art guy</div>
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">4 / 5</div>
+              <div class="numbertext">4 / 4</div>
               <img
-                src="Assets/FrontpagePhotos/20241003_160730.jpg"
-                style="width: 35vw"
+                src="../Assets/FrontpagePhotos/20241003_160730.jpg"
+                style="width: 35vw;
+                height: 30vh;
+                object-fit: contain;
+                padding: 1rem;"
               />
               <div class="text">Legendary Yap session</div>
             </div>
