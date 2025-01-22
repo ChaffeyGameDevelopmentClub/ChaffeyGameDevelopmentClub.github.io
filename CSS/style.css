@@ -1,0 +1,469 @@
+/* Made by Luna Chavez */
+
+/*#region Colors*/
+:root {
+  --color1: #F72585;
+  --color2: #7209B7;
+  --color3: #3A0CA3;
+  --color4: #4361EE;
+  --color5: #4CC9F0;
+  --black: #1e1425;
+  --white: #f5f5f5;
+  --transparent: transparent;
+  --transGrey: rgba(0, 0, 0, 0.4);
+}
+/*#endregion*/
+
+/*#region Main*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #1e1425;
+}
+* {
+  box-sizing: border-box;
+}
+main {
+  color: var(--color5);
+}
+.flexMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*#endregion*/
+
+/*#region Header*/
+.headerStyle {
+  background-color: var(--color3);
+}
+.navStyle{
+  background-image: linear-gradient(var(--color3), var(--transparent));
+}
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  color: var(--color5);
+}
+.title,
+.description {
+  text-align: center;
+}
+
+
+nav {
+  padding-top: 1.5rem;
+  position: sticky;
+  top: 0rem;
+  z-index: 1;
+}
+.bannerJoin {
+  background-image: url("../Assets/cat-typing.gif");
+  background-size: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 2rem;
+  margin-bottom: 3rem;
+  font-size: 200%;
+}
+.link {
+  text-decoration: underline;
+}
+.link:hover{
+  color: var(--color1)
+}
+.link:focus,
+.link:active {
+  color: #ffffffad;
+}
+/*#endregion*/
+
+/*#region Containers*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.code {
+  background: #a5a0a0;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 20px;
+  justify-items: center;
+}
+.noGap{
+  gap: 0px;
+}
+.gridSpan{
+  grid-column: 1/4;
+  width: 100%;
+}
+.gridExpand{
+  display: float;
+}
+.center{
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+.centerFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.projectImg{
+  width: 60%;
+  height: auto;
+}
+/*#endregion*/
+
+/*#region About us junk*/
+.textSize{
+  font-size: 15px;
+}
+/*#endregion*/
+
+/*#region idk tbh*/
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.descriptionSmall {
+  font-size: 1rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+/*#endregion*/
+
+/*#region Cards*/
+/*Card*/
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid var(--color5);
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 500px;
+}
+.card:hover,
+.card:focus,
+.card:active {
+  color: var(--color1);
+  border-color: var(--color1);
+}
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+/*Card Non*/
+.cardNon{
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid var(--color5);
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 800px;
+}
+/*Card Nav*/
+.cardNav {
+  padding: 0.5rem;
+  text-align: left;
+  color: var(--color5);
+  text-decoration: none;
+  border: 1px solid var(--color5);
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 500px;
+  background-color: var(--transGrey);
+}
+.cardNav:hover,
+.cardNav:focus,
+.cardNav:active{
+  color: var(--color1);
+  border-color: var(--color1);
+}
+/*Card Project*/
+.cardProject{
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  position: relative;
+  top: 0px;
+  transition: all 0.3s ease-out;
+  width: 20vw;
+}
+.cardProject:hover,
+.cardProject:focus,
+.cardProject:active {
+  color: var(--color1);
+  border-color: var(--color1);
+  top: -6px;
+}
+.cardProjectHome{
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  border: 2px solid var(--color5);
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  position: relative;
+  top: 0px;
+  transition: all 0.3s ease-out;
+
+}
+.cardProjectHome:focus,
+.cardProjectHome:hover,
+.cardProjectHome:active {
+  color: var(--color1);
+  border-color: var(--color1);
+  top: -6px;
+}
+.cardProjectHighlight{
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  position: relative;
+  top: 0px;
+  transition: all 0.3s ease-out;
+
+}
+.cardProjectHighlight:focus,
+.cardProjectHighlight:hover,
+.cardProjectHighlight:active {
+  color: var(--color1);
+  border-color: var(--color1);
+  top: -6px;
+}
+.cardProjectHighlight img{
+  width: 50%;
+  height: auto;
+}
+/*#endregion*/
+
+/*#region Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* Number text (1/3 etc) */
+.numberText {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*#endregion*/
+
+/*#region Media Queries*/
+row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  float: left;
+  width: 100%;
+}
+ /* For tablets: */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    gap: 20px;
+    justify-items: center;
+  }
+  .noGap{
+    gap: 0px;
+  }
+  .cardProject{
+    width: 45vw;
+    border: 2px solid var(--color5);
+  }
+  .projectImg{
+    width: 100%;
+    height: auto;
+  }
+}
+/* For desktops: */
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .grid {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;  
+    gap: 20px;
+    justify-items: center;
+  }
+  .noGap{
+    gap: 0px;
+  }
+  .cardProject{
+    width: 30vw;
+    border: 2px solid var(--color5);
+  }
+  .cardNav{
+    margin: 1rem;
+  }
+  .projectImg{
+    width: 100%;
+    height: auto;
+  }
+  .textSize{
+    font-size: 22px;
+  }
+  .bannerJoin {
+    padding: 8rem 5rem;
+  }
+}
+/*#endregion*/

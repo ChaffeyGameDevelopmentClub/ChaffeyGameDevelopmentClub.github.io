@@ -1,0 +1,72 @@
+[
+  {
+    "Name": "Iris's candy shop",
+    "Link": "https://chaffeygamedev.itch.io/iriss-candy-shop",
+    "Img": "../Assets/GameIMG/IrisCandyShop.png",
+    "Dec": "It is a small game where you make candy for some funny customers.",
+    "Year": "2024"
+  },
+  {
+    "Name": "Baked with love",
+    "Link": "https://chaffeygamedev.itch.io/baked-with-love",
+    "Img": "../Assets/GameIMG/BakedWithLove.png",
+    "Dec": "While hearing your two crushes argue over which sweets are better, you had the idea to skate to get what they wanted! Collect ingredients to receive something sweet!",
+    "Year": "2024"
+  },
+  {
+    "Name": "Eyes of The Inferno",
+    "Link": "https://chaffeygamedev.itch.io/eyes-of-the-inferno",
+    "Img": "../Assets/GameIMG/Inferno.png",
+    "Dec": "They see right through you",
+    "Year": "2024"
+  },
+  {
+    "Name": "Fire Flight",
+    "Link": "https://chaffeygamedev.itch.io/fire-flight",
+    "Img": "../Assets/GameIMG/Fireflight.png",
+    "Dec": "Fly away from the evil bugs in the swamp",
+    "Year": "2024"
+  },
+  {
+    "Name": "Dr Radiant",
+    "Link": "https://chaffeygamedev.itch.io/dr-radiant",
+    "Img": "../Assets/GameIMG/DrRadient.png",
+    "Dec": "Play as a Doctor helping out their patients",
+    "Year": "2024"
+  },
+  {
+    "Name": "Kowboy kitty",
+    "Link": "https://chaffeygamedev.itch.io/kowboy-kitty",
+    "Img": "../Assets/GameIMG/KowboyKitty.png",
+    "Dec": "Play as a cowboy and try to escape from bounty hunters. Our entry for the Global Game Jam 2024.",
+    "Year": "2024"
+  },
+  {
+    "Name": "Banana Killer",
+    "Link": "https://github.com/ChaffeyGameDevelopmentClub/BananaKiller",
+    "Img": "../Assets/GameIMG/killerBanana.png",
+    "Dec": "Swap dimensions to open a path away from the evil banana man",
+    "Year": "2023"
+  },
+  {
+    "Name": "Seed Of Light",
+    "Link": "https://github.com/ChaffeyGameDevelopmentClub/SeedOfLight",
+    "Img": "../Assets/GameIMG/SeedofLight.png",
+    "Dec": "A 2D platformer with a focus on puzzle solving.",
+    "Year": "2023"
+  },
+  {
+    "Name": "Easter Bunny Dating Sim",
+    "Link": "https://github.com/ChaffeyGameDevelopmentClub/EasterBunnyDatingSim",
+    "Img": "../Assets/GameIMG/EasterBunny.png",
+    "Dec": "Idk dawg",
+    "Year": "2023"
+  },
+  {
+    "Name": "SpaceCat KnifeParty",
+    "Link": "https://github.com/ChaffeyGameDevelopmentClub/SpaceCatKnifeParty",
+    "Img": "../Assets/GameIMG/SpaceCat.png",
+    "Dec": "Retro-style space cat shooter game",
+    "Year": "2023"
+  }
+]

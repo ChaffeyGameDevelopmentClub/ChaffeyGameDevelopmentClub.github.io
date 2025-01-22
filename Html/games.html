@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <!--#region Website Settings-->
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width" />
+      <title>CGDC</title>
+      <!--Enter Ico-->
+      <link rel="icon" type="image/x-icon" href="/Assets/GDClogo.ico" />
+      <link href="/CSS/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <!--#endregion-->
+  
+    <!--#region Nav links-->
+    <!--Header-->
+    <header class="headerStyle col-12 centerFlex">
+      <a href="homepage.html" class="">
+        <img
+          src="../Assets/GDClogo.png"
+          width="125vw"
+          height="125vw"
+          object-fit="contain"
+          style="background-color: inherit"
+        />
+      </a>
+    </header>
+    <row></row>
+    <!--Nav inner-->
+    <nav class="navStyle">
+      <a href="homepage.html" class="cardNav"> Home</a>
+      <a href="games.html" class="cardNav"> Games </a>
+      <a href="signin.html" class="cardNav"> Sign In</a>
+      <a href="https://discord.gg/5h9ZerqHqC" class="cardNav"> Discord </a>
+      <a href="about.html" class="cardNav"> About Us </a>
+      <!--So theres a bit of space between the nav and the main content-->
+      <p style="padding-top: 0.5rem"></p>
+    </nav>
+    <!--#endregion-->
+
+  <body>
+    <main>
+      <!--#region Title-->
+      <div class="col-12">
+        <h1 style="text-align: center">Some Projects we've worked on</h1>
+      </div>
+      <row></row>
+      <!--#endregion-->
+
+      <!--#region Projects-->
+      <div class="col-12">
+        <div id="ProjectCont" class="grid noGap center"></div>
+      </div>
+      <!-- #endregion -->
+      <row></row>
+      
+    </main>
+
+    <script src="../JS/projectArray.js"></script>
+  </body>
+  <!--#region Footer-->
+  <section>
+    <footer>
+      <nav style="
+          display: flex;
+          flex-direction: row;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        ">
+        <!--Discord-->
+        <section>
+          <a href="https://discord.gg/5h9ZerqHqC" class="card" style="padding-top: 2.5rem; padding-bottom: .5rem;">
+            <img src="../Assets/discord-white-icon.webp" width="50vw" height="auto" />
+          </a>
+        </section>
+        <!--Github-->
+        <section>
+          <a href="https://github.com/ChaffeyGameDevelopmentClub" class="card" style="padding-top: 2.5rem; padding-bottom: .5rem;">
+            <img src="../Assets/Github.png" width="50vw" height="auto" />
+          </a>
+        </section>
+      </nav>
+      <p style="padding-top: .5rem; text-align: center;">Created by Luna Chavez</p>
+    </footer>
+  </section>
+  <!--#endregion-->
+</html>
