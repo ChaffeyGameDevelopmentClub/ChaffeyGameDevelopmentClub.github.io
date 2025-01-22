@@ -1,109 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <!--Website Settings-->
+  <!--#region Website Settings-->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>CGDC</title>
     <!--Enter Ico-->
-    <link rel="icon" type="image/x-icon" href="#" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/Assets/GDClogo.ico" />
+    <link href="/CSS/style.css" rel="stylesheet" type="text/css" />
   </head>
+  <!--#endregion-->
 
-  <!--Nav links-->
-
-  <div
-    class="headerStyle"
-    style="
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      flex-direction: row;
-    "
-  >
-    <!--Nav inner-->
-    <nav class="navStyle">
-      <div style="float: left; padding-left: 3rem; min-width: 33vw">
-        <a href="homepage.html" class="cardNav"> Home</a>
-        <a href="games.html" class="cardNav"> Games </a>
-        <a href="calendar.html" class="cardNav"> Calendar </a>
-        <a href="signin.html" class="cardNav"> Sign In</a>
-        <a href="https://discord.gg/5h9ZerqHqC" class="cardNav"> Discord </a>
-        <a href="about.html" class="cardNav"> About Us </a>
-        
-      </div>
-    </nav>
-    <!--nav Image-->
-    <div style="min-width: 33vw; background-color: inherit">
-      <section
-        style="
-          display: grid;
-          justify-content: center;
-          background-color: inherit;
-        "
-      >
-        <a href="homepage.html" class="cardNav">
-          <img
-          src="Assets/GDClogo.png"
-          width="125vw"
-          height="125vw"
-          style="padding: 10px; background-color: inherit"
-         />
-        </a>
-      </section>
-    </div>
-    <!--Nav Empty-->
-    <div style="float: right; min-width: 33vw; background-color: inherit">
-      <a href="clubrush.html" class="cardNav"> Club Rush</a>
-    </div>
-  </div>
+  <!--#region Nav links-->
+  <!--Header-->
+  <header class="headerStyle col-12 centerFlex">
+    <a href="homepage.html" class="">
+      <img
+        src="../Assets/GDClogo.png"
+        width="125vw"
+        height="125vw"
+        object-fit="contain"
+        style="background-color: inherit"
+      />
+    </a>
+  </header>
+  <row></row>
+  <!--Nav inner-->
+  <nav class="navStyle">
+    <a href="homepage.html" class="cardNav"> Home</a>
+    <a href="games.html" class="cardNav"> Games </a>
+    <a href="signin.html" class="cardNav"> Sign In</a>
+    <a href="https://discord.gg/5h9ZerqHqC" class="cardNav"> Discord </a>
+    <a href="about.html" class="cardNav"> About Us </a>
+    <!--So theres a bit of space between the nav and the main content-->
+    <p style="padding-top: 0.5rem"></p>
+  </nav>
+  <!--#endregion-->
   <!--Home Page-->
   <body>
-    <main>
-      <!--Footer-->
-      <section>
-        <footer>
-          <nav
-            style="
-              display: flex;
-              flex-direction: row;
-              padding-top: 2rem;
-              padding-bottom: 2rem;
-            "
-          >
-            <!--Instagram-->
-            <!--
-                <section>
-                <a
-                  href="#"
-                  class="card"
-                >
-                  <img src="Assets/instagram.png" width="50" height="50" />
-                </a>
-              </section>
-              -->
-            <!--Discord-->
-            <section>
-              <a href="https://discord.gg/5h9ZerqHqC" class="card">
-                <img
-                  src="Assets/discord-white-icon.webp"
-                  width="50"
-                  height="50"
-                />
-              </a>
-            </section>
-            <!--Github-->
-            <section>
-              <a
-                href="https://github.com/ChaffeyGameDevelopmentClub"
-                class="card"
-              >
-                <img src="Assets/Github.png" width="50" height="50" />
-              </a>
-            </section>
-          </nav>
-        </footer>
-      </section>
-    </main>
+    <main></main>
+    <!--#region Footer-->
+    <section>
+      <footer>
+        <nav
+          style="
+            display: flex;
+            flex-direction: row;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+          "
+        >
+          <!--Discord-->
+          <section>
+            <a
+              href="https://discord.gg/5h9ZerqHqC"
+              class="card"
+              style="padding-top: 2.5rem; padding-bottom: 0.5rem"
+            >
+              <img
+                src="../Assets/discord-white-icon.webp"
+                width="50vw"
+                height="auto"
+              />
+            </a>
+          </section>
+          <!--Github-->
+          <section>
+            <a
+              href="https://github.com/ChaffeyGameDevelopmentClub"
+              class="card"
+              style="padding-top: 2.5rem; padding-bottom: 0.5rem"
+            >
+              <img src="../Assets/Github.png" width="50vw" height="auto" />
+            </a>
+          </section>
+        </nav>
+      </footer>
+    </section>
+    <!--#endregion-->
+    <script src="../JS/projectArray.js"></script>
   </body>
 </html>

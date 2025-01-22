@@ -1,5 +1,19 @@
 [
   {
+    "Name": "Iris's candy shop",
+    "Link": "https://chaffeygamedev.itch.io/iriss-candy-shop",
+    "Img": "../Assets/GameIMG/IrisCandyShop.png",
+    "Dec": "It is a small game where you make candy for some funny customers.",
+    "Year": "2024"
+  },
+  {
+    "Name": "Baked with love",
+    "Link": "https://chaffeygamedev.itch.io/baked-with-love",
+    "Img": "../Assets/GameIMG/BakedWithLove.png",
+    "Dec": "While hearing your two crushes argue over which sweets are better, you had the idea to skate to get what they wanted! Collect ingredients to receive something sweet!",
+    "Year": "2024"
+  },
+  {
     "Name": "Eyes of The Inferno",
     "Link": "https://chaffeygamedev.itch.io/eyes-of-the-inferno",
     "Img": "../Assets/GameIMG/Inferno.png",

@@ -41,21 +41,21 @@ async function getProjects() {
   }
 }
 
-//Clicking on a project
-function expandProject(project) {
-  console.log(project.Name);
+// Clicking on a project
+// function expandProject(project) {
+//   console.log(project.Name);
 
-  //Expand element
-  const linkCont = document.getElementById(project.Name);
-  if (linkCont.classList.contains("gridSpan")) {
-    //return to normal
-    linkCont.classList.remove("gridSpan");
-  } else {
-    //expand
-    //linkCont.classList.add("gridSpan")
-    //Adding new content
-  }
-}
+//   Expand element
+//   const linkCont = document.getElementById(project.Name);
+//   if (linkCont.classList.contains("gridSpan")) {
+//     return to normal
+//     linkCont.classList.remove("gridSpan");
+//   } else {
+//     expand
+//     linkCont.classList.add("gridSpan")
+//     Adding new content
+//   }
+// }
 
 //most recent game
 async function recentGame() {
@@ -72,7 +72,7 @@ async function recentGame() {
     //Link box
     const linkCont = document.createElement("a");
     //linkCont.href = project.Link;
-    linkCont.className = "cardProjectHome";
+    linkCont.className = "cardProjectHighlight";
     //Used for buttons
     linkCont.id = project.Name;
     //Link

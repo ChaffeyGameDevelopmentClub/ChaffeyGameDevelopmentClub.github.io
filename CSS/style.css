@@ -54,19 +54,32 @@ main {
 .description {
   text-align: center;
 }
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-.descriptionSmall{
-  font-size: 1rem;
-}
+
+
 nav {
   padding-top: 1.5rem;
   position: sticky;
   top: 0rem;
   z-index: 1;
+}
+.bannerJoin {
+  background-image: url("../Assets/cat-typing.gif");
+  background-size: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 2rem;
+  margin-bottom: 3rem;
+  font-size: 200%;
+}
+.link {
+  text-decoration: underline;
+}
+.link:hover{
+  color: var(--color1)
+}
+.link:focus,
+.link:active {
+  color: #ffffffad;
 }
 /*#endregion*/
 
@@ -117,38 +130,8 @@ a {
 /*#endregion*/
 
 /*#region About us junk*/
-.aboutMePic {
-  float: left;
-  width: 30%;
-  padding: 0.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 800px;
-}
-
-.aboutMeDec {
-  padding: 25px;
-  float: left;
-  width: 60%;
-  border: #000000;
-  border-radius: 1px;
-}
-
-.aboutMeLink {
-  padding: 25px;
-  float: right;
-  width: 10%;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 800px;
+.textSize{
+  font-size: 15px;
 }
 /*#endregion*/
 
@@ -284,6 +267,29 @@ a {
   color: var(--color1);
   border-color: var(--color1);
   top: -6px;
+}
+.cardProjectHighlight{
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  position: relative;
+  top: 0px;
+  transition: all 0.3s ease-out;
+
+}
+.cardProjectHighlight:focus,
+.cardProjectHighlight:hover,
+.cardProjectHighlight:active {
+  color: var(--color1);
+  border-color: var(--color1);
+  top: -6px;
+}
+.cardProjectHighlight img{
+  width: 50%;
+  height: auto;
 }
 /*#endregion*/
 
@@ -452,6 +458,12 @@ row::after{
   .projectImg{
     width: 100%;
     height: auto;
+  }
+  .textSize{
+    font-size: 22px;
+  }
+  .bannerJoin {
+    padding: 8rem 5rem;
   }
 }
 /*#endregion*/
