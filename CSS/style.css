@@ -28,7 +28,6 @@ body {
 }
 main {
   color: var(--color5);
-  padding: 4rem 2rem;
 }
 .flexMain{
   display: flex;
@@ -67,6 +66,7 @@ nav {
   padding-top: 1.5rem;
   position: sticky;
   top: 0rem;
+  z-index: 1;
 }
 /*#endregion*/
 
@@ -90,6 +90,9 @@ a {
   gap: 20px;
   justify-items: center;
 }
+.noGap{
+  gap: 0px;
+}
 .gridSpan{
   grid-column: 1/4;
   width: 100%;
@@ -106,6 +109,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center; 
+}
+.projectImg{
+  width: 60%;
+  height: auto;
 }
 /*#endregion*/
 
@@ -242,19 +249,38 @@ a {
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid var(--color5);
+  
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  
-
+  position: relative;
+  top: 0px;
+  transition: all 0.3s ease-out;
+  width: 20vw;
+}
+.cardProject:hover,
+.cardProject:focus,
+.cardProject:active {
+  color: var(--color1);
+  border-color: var(--color1);
+  top: -6px;
+}
+.cardProjectHome{
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  border: 2px solid var(--color5);
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
   position: relative;
   top: 0px;
   transition: all 0.3s ease-out;
 
 }
-.cardProject:hover,
-.cardProject:focus,
-.cardProject:active {
+.cardProjectHome:focus,
+.cardProjectHome:hover,
+.cardProjectHome:active {
   color: var(--color1);
   border-color: var(--color1);
   top: -6px;
@@ -378,9 +404,19 @@ row::after{
   .grid {
     display: grid;
     grid-template-columns: 50% 50%; 
-    grid-template-rows: 100%;  
     gap: 20px;
     justify-items: center;
+  }
+  .noGap{
+    gap: 0px;
+  }
+  .cardProject{
+    width: 45vw;
+    border: 2px solid var(--color5);
+  }
+  .projectImg{
+    width: 100%;
+    height: auto;
   }
 }
 /* For desktops: */
@@ -399,13 +435,23 @@ row::after{
   .col-12 {width: 100%;}
   .grid {
     display: grid;
-    grid-template-columns: 33% 33% 33%; 
-    grid-template-rows: 100%;  
+    grid-template-columns: 33.3% 33.3% 33.3%;  
     gap: 20px;
     justify-items: center;
   }
+  .noGap{
+    gap: 0px;
+  }
+  .cardProject{
+    width: 30vw;
+    border: 2px solid var(--color5);
+  }
   .cardNav{
     margin: 1rem;
+  }
+  .projectImg{
+    width: 100%;
+    height: auto;
   }
 }
 /*#endregion*/

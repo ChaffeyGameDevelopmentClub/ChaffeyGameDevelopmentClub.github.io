@@ -28,14 +28,14 @@
   <!--Nav inner-->
   <nav class="navStyle">
     <a href="homepage.html" class="cardNav"> Home</a>
-    <a href="games.html" class="cardNav"> Games </a>
-    <a href="calendar.html" class="cardNav"> Calendar </a>
-    <a href="signin.html" class="cardNav"> Sign In</a>
-    <a href="https://discord.gg/5h9ZerqHqC" class="cardNav"> Discord </a>
-    <a href="about.html" class="cardNav"> About Us </a>
+      <a href="games.html" class="cardNav"> Games </a>
+      <a href="signin.html" class="cardNav"> Sign In</a>
+      <a href="https://discord.gg/5h9ZerqHqC" class="cardNav"> Discord </a>
+      <a href="about.html" class="cardNav"> About Us </a>
     <!--So theres a bit of space between the nav and the main content-->
     <p style="padding-top: 0.5rem"></p>
   </nav>
+  <!--#endregion-->
   <!--Temp style-->
   <!--from cover to 100%-->
   <style>
@@ -216,8 +216,7 @@
         </article>
         <!--#endregion-->
       </section>
-
-      <p style="padding: 1rem"></p>
+      <row></row>
       <!--#region Games-->
       <!--Most Recent Game-->
       <section style="text-align: center">
@@ -225,11 +224,12 @@
           Check out our most recent game!
         </h1>
         <!--Recent Game-->
-        <div id="RecentGame"></div>
-        
+        <div class="col-12" style="justify-items: center">
+        <div id="RecentGame" style="padding: 2rem;" ></div>
+        </div>
         <p style="padding: 2rem"></p>
       </section>
-
+      <row></row>
       <!--Games List-->
       <section
         style="
@@ -249,135 +249,37 @@
         >
           Here is a list of our recent games!
         </h1>
-        <section class="grid" style="background-color: inherit">
-          <!--Games-->
-          <!--Fire Flight-->
-          <a href="https://chaffeygamedev.itch.io/fire-flight" class="card">
-            <img src="Game Img\Fireflight.png" width="250" height="250" />
-            <h1
-              style="
-                text-align: center;
-                max-width: 240px;
-                background-color: inherit;
-              "
-            >
-              Fire Flight
-            </h1>
-            <p
-              style="
-                text-align: center;
-                max-width: 240px;
-                background-color: inherit;
-              "
-            >
-              Fly away from the evil bugs in the swamp
-            </p>
-          </a>
-          <!--Dr Radiant-->
-          <a href="https://chaffeygamedev.itch.io/dr-radiant" class="card">
-            <img src="Game Img\DrRadient.png" width="250" height="250" />
-            <h1
-              style="
-                text-align: center;
-                max-width: 240px;
-                background-color: inherit;
-              "
-            >
-              Dr. Radiant
-            </h1>
-            <p
-              style="
-                text-align: center;
-                max-width: 240px;
-                background-color: inherit;
-              "
-            >
-              Play as a Doctor helping out their patients
-            </p>
-          </a>
-          <!--Kowboy Kitty-->
-          <a href="https://chaffeygamedev.itch.io/kowboy-kitty" class="card">
-            <img src="Game Img\KowboyKitty.png" width="250" height="250" />
-            <h1
-              style="
-                text-align: center;
-                max-width: 240px;
-                background-color: inherit;
-              "
-            >
-              Kowboy Kitty
-            </h1>
-            <p
-              style="
-                text-align: center;
-                max-width: 240px;
-                background-color: inherit;
-              "
-            >
-              Play as a cowboy and try to escape from bounty hunters
-            </p>
-          </a>
-        </section>
-        <section
-          style="
-            text-align: center;
-            font-size: 20px;
-            padding: 1rem;
-            background-color: inherit;
-          "
-        >
-          <a style="background-color: inherit"> Check out more of our games </a>
-          <a href="games.html" class="link" style="background-color: inherit">
-            here!
-          </a>
-        </section>
+        <div class="col-12">
+          <div id="ExtraGames" class="grid noGap center"></div>
+        </div>
+        <row></row>
       </section>
       <!--#endregion-->
       <!--#region Footer-->
-      <section>
-        <footer>
-          <nav
-            style="
-              display: flex;
-              flex-direction: row;
-              padding-top: 2rem;
-              padding-bottom: 2rem;
-            "
-          >
-            <!--Instagram-->
-            <!--
-          <section>
-          <a
-            href="#"
-            class="card"
-          >
-            <img src="Assets/instagram.png" width="50" height="50" />
+  <section>
+    <footer>
+      <nav style="
+          display: flex;
+          flex-direction: row;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        ">
+        <!--Discord-->
+        <section>
+          <a href="https://discord.gg/5h9ZerqHqC" class="card" style="padding-top: 2.5rem; padding-bottom: .5rem;">
+            <img src="../Assets/discord-white-icon.webp" width="50vw" height="auto" />
           </a>
         </section>
-        -->
-            <!--Discord-->
-            <section>
-              <a href="https://discord.gg/5h9ZerqHqC" class="card">
-                <img
-                  src="Assets/discord-white-icon.webp"
-                  width="50"
-                  height="50"
-                />
-              </a>
-            </section>
-            <!--Github-->
-            <section>
-              <a
-                href="https://github.com/ChaffeyGameDevelopmentClub"
-                class="card"
-              >
-                <img src="Assets/Github.png" width="50" height="50" />
-              </a>
-            </section>
-          </nav>
-        </footer>
-      </section>
-      <!--#endregion-->
+        <!--Github-->
+        <section>
+          <a href="https://github.com/ChaffeyGameDevelopmentClub" class="card" style="padding-top: 2.5rem; padding-bottom: .5rem;">
+            <img src="../Assets/Github.png" width="50vw" height="auto" />
+          </a>
+        </section>
+      </nav>
+    </footer>
+  </section>
+  <!--#endregion-->
     </main>
     <script src="../JS/projectArray.js"></script>
   </body>
