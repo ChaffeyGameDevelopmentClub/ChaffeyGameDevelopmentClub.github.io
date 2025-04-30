@@ -7,6 +7,13 @@
     "Year":"2025"
   },
   {
+    "Name":"Bubble Bowl",
+    "Link":"https://chaffeygamedev.itch.io/bubble-bowl",
+    "Img":"../Assets/GameIMG/BuybbleBowlTitle.jpeg",
+    "Dec":"Fight it out with your friends and be the one to win the Bubble Bowl! Made for the 2025 Global Game Jam.",
+    "Year":"2025"
+  },
+  {
     "Name": "Iris's candy shop",
     "Link": "https://chaffeygamedev.itch.io/iriss-candy-shop",
     "Img": "../Assets/GameIMG/IrisCandyShop.png",
