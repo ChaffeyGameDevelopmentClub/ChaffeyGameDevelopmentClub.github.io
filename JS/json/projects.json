@@ -1,5 +1,12 @@
 [
   {
+    "Name":"Cupids Shot",
+    "Link":"https://hudaniel127.itch.io/cupids-shot",
+    "Img":"../Assets/GameIMG/CupidsShot.png",
+    "Dec":"A puzzel game made for a club jam themed around valentines day.",
+    "Year":"2025"
+  },
+  {
     "Name": "Iris's candy shop",
     "Link": "https://chaffeygamedev.itch.io/iriss-candy-shop",
     "Img": "../Assets/GameIMG/IrisCandyShop.png",
