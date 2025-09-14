@@ -395,7 +395,7 @@ row::after{
   width: 100%;
 }
  /* For tablets: */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 100px) {
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
   .col-s-3 {width: 25%;}
@@ -408,6 +408,11 @@ row::after{
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
+   .gridOfficer{
+    display: grid;
+    gap: 100px;
+    justify-content: center;
+  }
   .grid {
     display: block;
     grid-template-columns: 50% 50%;
@@ -427,7 +432,7 @@ row::after{
   }
 }
 /* For desktops: */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1150px) {
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -442,10 +447,16 @@ row::after{
   .col-12 {width: 100%;}
   .grid {
     display: grid;
-    width: 25%;
-    grid-template-columns: 33.3%,33.3%,33.3%;
+    width: 100%;
+    grid-template-columns: 35% 35%;
     justify-content: center;
-    gap: 100%;
+    gap: 2px;
+  }
+  .gridOfficer {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-items: center;
+    gap: 20%;
   }
   .noGap{
     gap: 0px;
