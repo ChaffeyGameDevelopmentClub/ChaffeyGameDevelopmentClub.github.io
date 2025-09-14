@@ -14,6 +14,13 @@
     "Year":"2025"
   },
   {
+    "Name":"Free Monkey",
+    "Link":"https://hudaniel127.itch.io/free-monkey",
+    "Img:": "../Assets/GameIMG/CupidsShotImg.png",
+    "Dec":"Temp",
+    "Year":"2024"
+  },
+  {
     "Name": "Iris's candy shop",
     "Link": "https://chaffeygamedev.itch.io/iriss-candy-shop",
     "Img": "../Assets/GameIMG/IrisCandyShop.png",

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>CGDC</title>
+    <title>Chaffey Game Development Club</title>
     <!--Enter Ico-->
     <link rel="icon" type="image/x-icon" href="/Assets/GDClogo.ico" />
     <link href="/CSS/style.css" rel="stylesheet" type="text/css" />
@@ -27,11 +27,11 @@
   <row></row>
   <!--Nav inner-->
   <nav class="navStyle">
-    <a href="homepage.html" class="cardNav"> Home</a>
-      <a href="games.html" class="cardNav"> Games </a>
-      <a href="signin.html" class="cardNav"> Sign In</a>
-      <a href="https://discord.gg/5h9ZerqHqC" class="cardNav"> Discord </a>
-      <a href="about.html" class="cardNav"> About Us </a>
+  <a href="homepage.html" class="cardNav">Home</a>
+  <a href="games.html" class="cardNav">Games</a>
+  <a href="about.html" class="cardNav">About Us</a>
+  <a href="signin.html" class="cardNav">Weekly Sign In</a>
+  <a href="https://discord.gg/5h9ZerqHqC" class="cardNav">Discord</a>
     <!--So theres a bit of space between the nav and the main content-->
     <p style="padding-top: 0.5rem"></p>
   </nav>
@@ -42,15 +42,7 @@
       <!--Sign up for Game Jams!-->
       <!--#region Banner-->
       <section class="bannerJoin col-12">
-        <h1 class="title">Chaffey Game Dev Club</h1>
-        <a style="background-color: transparent">Join the </a>
-        <a
-          href="https://discord.gg/5h9ZerqHqC"
-          class="link"
-          style="background-color: transparent"
-        >
-          Discord!
-        </a>
+        <h1 class="title">Chaffey Game Development Club</h1>
       </section>
       <!--#endregion-->
       <row></row>
@@ -60,132 +52,9 @@
           margin: 2rem;
           border: 3px solid #000000;
           border-radius: 10px;
-          padding: 1rem;
-        "
+          padding: 1rem;"
       >
-        <!-- #region SLIDESHOW -->
-        <article>
-          <div
-            class="slideshow-container"
-            style="float: left; background-color: transparent"
-          >
-            <div class="mySlides fade">
-              <div class="numberText">1 / 4</div>
-              <img
-                src="../Assets/FrontpagePhotos/IMG_0534.jpg"
-                style="
-                  width: 35vw;
-                  height: 30vh;
-                  object-fit: contain;
-                  padding: 1rem;
-                "
-              />
-              <div class="text">Slime Sprite Sheet</div>
-            </div>
 
-            <div class="mySlides fade">
-              <div class="numberText">2 / 4</div>
-              <img
-                src="../Assets/FrontpagePhotos/IMG_0535.jpg"
-                style="
-                  width: 35vw;
-                  height: 30vh;
-                  object-fit: contain;
-                  padding: 1rem;
-                "
-              />
-              <div class="text">Coder with notes</div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numberText">3 / 4</div>
-              <img
-                src="../Assets/FrontpagePhotos/IMG_0536.jpg"
-                style="
-                  width: 35vw;
-                  height: 30vh;
-                  object-fit: contain;
-                  padding: 1rem;
-                "
-              />
-              <div class="text">Really cool art guy</div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numberText">4 / 4</div>
-              <img
-                src="../Assets/FrontpagePhotos/20241003_160730.jpg"
-                style="
-                  width: 35vw;
-                  height: 30vh;
-                  object-fit: contain;
-                  padding: 1rem;
-                "
-              />
-              <div class="text">Legendary Yap session</div>
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
-            <div style="text-align: center; float: left; padding-top: 1rem">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
-              <span class="dot" onclick="currentSlide(4)"></span>
-            </div>
-          </div>
-
-          <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-              showSlides((slideIndex += n));
-            }
-
-            function currentSlide(n) {
-              showSlides((slideIndex = n));
-            }
-
-            function showSlides(n) {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {
-                slideIndex = 1;
-              }
-              if (n < 1) {
-                slideIndex = slides.length;
-              }
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex - 1].style.display = "block";
-              dots[slideIndex - 1].className += " active";
-            }
-          </script>
-        </article>
-        <!-- #endregion -->
-
-        <!--#region Description-->
-        <article>
-          <p style="font-size: 35px; text-align: center">About us!</p>
-          <p
-            class="textSize"
-            style="text-align: center; margin-bottom: 3rem; padding: 2rem"
-          >
-            Join us every Thursday at 2:30 PM in Room BE-106 for our weekly
-            meetings. We’re dedicated to creating an inclusive space where
-            everyone can explore and learn all facets of game development. No
-            prior experience or skills are needed—our team is here to guide you
-            through everything you need to know!
-          </p>
-        </article>
-        <!--#endregion-->
-      </section>
       <row></row>
       <!--#region Games-->
       <!--Most Recent Game-->
@@ -194,9 +63,7 @@
           Check out our most recent game!
         </h1>
         <!--Recent Game-->
-        <div class="col-12" style="justify-items: center">
         <div id="RecentGame" style="padding: 2rem;" ></div>
-        </div>
         <p style="padding: 2rem"></p>
       </section>
       <row></row>
@@ -217,7 +84,7 @@
             background-color: #000000;
           "
         >
-          Here is a list of our recent games!
+          Recent games!
         </h1>
         <div class="col-12">
           <div id="ExtraGames" class="grid noGap center"></div>

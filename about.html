@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>CGDC</title>
+  <title>Chaffey Game Development Club</title>
   <!--Enter Ico-->
   <link rel="icon" type="image/x-icon" href="/Assets/GDClogo.ico" />
   <link href="/CSS/style.css" rel="stylesheet" type="text/css" />
@@ -23,11 +23,11 @@
 <row></row>
 <!--Nav inner-->
 <nav class="navStyle">
-  <a href="homepage.html" class="cardNav"> Home</a>
-  <a href="games.html" class="cardNav"> Games </a>
-  <a href="signin.html" class="cardNav"> Sign In</a>
-  <a href="https://discord.gg/5h9ZerqHqC" class="cardNav"> Discord </a>
-  <a href="about.html" class="cardNav"> About Us </a>
+  <a href="homepage.html" class="cardNav">Home</a>
+  <a href="games.html" class="cardNav">Games</a>
+  <a href="about.html" class="cardNav">About Us</a>
+  <a href="signin.html" class="cardNav">Weekly Sign In</a>
+  <a href="https://discord.gg/5h9ZerqHqC" class="cardNav">Discord</a>
   <!--So theres a bit of space between the nav and the main content-->
   <p style="padding-top: 0.5rem"></p>
 </nav>
@@ -36,38 +36,161 @@
 
 <body>
   <main>
+            <!-- #region SLIDESHOW -->
+        <article>
+          <div
+            class="slideshow-container"
+            style="float: left; background-color: transparent"
+          >
+            <div class="mySlides fade">
+              <div class="numberText">1 / 4</div>
+              <img
+                src="../Assets/FrontpagePhotos/IMG_0534.jpg"
+                style="
+                  width: 35vw;
+                  height: 30vh;
+                  object-fit: contain;
+                  padding: 1rem;
+                "
+              />
+              <div class="text">Slime Sprite Sheet</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numberText">2 / 4</div>
+              <img
+                src="../Assets/FrontpagePhotos/IMG_0535.jpg"
+                style="
+                  width: 35vw;
+                  height: 30vh;
+                  object-fit: contain;
+                  padding: 1rem;
+                "
+              />
+              <div class="text">Coder with notes</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numberText">3 / 4</div>
+              <img
+                src="../Assets/FrontpagePhotos/IMG_0536.jpg"
+                style="
+                  width: 35vw;
+                  height: 30vh;
+                  object-fit: contain;
+                  padding: 1rem;
+                "
+              />
+              <div class="text">Really cool art guy</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numberText">4 / 4</div>
+              <img
+                src="../Assets/FrontpagePhotos/20241003_160730.jpg"
+                style="
+                  width: 35vw;
+                  height: 30vh;
+                  object-fit: contain;
+                  padding: 1rem;
+                "
+              />
+              <div class="text">Legendary Yap session</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div style="text-align: center; float: left; padding-top: 1rem">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+          </div>
+
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides((slideIndex += n));
+            }
+
+            function currentSlide(n) {
+              showSlides((slideIndex = n));
+            }
+
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = slides.length;
+              }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+            }
+          </script>
+        </article>
+        <!-- #endregion -->
+
+        <!--#region Description-->
+        <article>
+          <p style="font-size: 35px; text-align: center">About us!</p>
+          <p
+            class="textSize"
+            style="text-align: center; margin-bottom: 3rem; padding: 2rem"
+          >
+            Join us every Thursday at 2:30 PM in Room BE-106 for our weekly
+            meetings. We’re dedicated to creating an inclusive space where
+            everyone can explore and learn all facets of game development. No
+            prior experience or skills are needed—our team is here to guide you
+            through everything you need to know!
+          </p>
+        </article>
+        <!--#endregion-->
+      </section>
     <h1 class="title" style="text-align: center;">Meet the Officers!</h1>
     <!--Desc-->
     <h1></h1>
-    <h1>Officers</h1>
+
     <section class="grid">
       <a class="cardNon">
-        <img src="../Assets/Officer Photos/Benny.JPG" width="350vw" />
+        <img src="../Assets/New Officer Photos/Daniel.jpg" width="300vw" />
         <h1>President</h1>
-        <p>Benny Ubario</p>
+        <p>Daniel Hu</p>
       </a>
       <a class="cardNon">
-        <img src="../Assets/Officer Photos/Luna.JPG" width="350vw" />
+        <img src="../Assets/New Officer Photos/Miguel.jpg" width="300vw" />
         <h1>Vice President</h1>
-        <p>Luna Chavez</p>
+        <p>Miguel Murillo</p>
       </a>
       <a class="cardNon">
-        <img src="../Assets/Officer Photos/Lizzy.JPG" width="350vw" />
+        <img src="../Assets/New Officer Photos/Tanvir.jpg" width="300vw" />
         <h1>Treasurer</h1>
-        <p>Lizzy Mak</p>
+        <p>Tanvir Singh</p>
       </a>
       <a class="cardNon">
-        <img src="../Assets\Officer Photos\Quin.jpg" width="350vw" />
+        <img src="../Assets\New Officer Photos\Lance.jpg" width="300vw" />
         <h1>ICC Representative</h1>
-        <p>Quin Lebovic</p>
+        <p>Lance Landayan</p>
       </a>
       <a class="cardNon">
-        <img src="../Assets\Officer Photos\Iris.jpg" width="350vw" />
+        <img src="../Assets\Officer Photos\Iris.jpg" width="300vw" />
         <h1>Secretary</h1>
         <p>Iris Isafold</p>
       </a>
       <a class="cardNon">
-        <img src="#" width="350vw" />
+        <img src="#" width="300vw" />
         <h1>Club Advisor</h1>
         <p>Dr Tracy</p>
       </a>
@@ -83,8 +206,7 @@
     <nav style="
         display: flex;
         flex-direction: row;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding:2rem;
       ">
       <!--Discord-->
       <section>

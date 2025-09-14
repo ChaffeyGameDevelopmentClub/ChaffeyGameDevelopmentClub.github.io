@@ -57,13 +57,14 @@ main {
 
 
 nav {
-  padding-top: 1.5rem;
+  text-align: center;
+  padding-top: 1rem;
   position: sticky;
   top: 0rem;
   z-index: 1;
 }
 .bannerJoin {
-  background-image: url("../Assets/cat-typing.gif");
+
   background-size: 100%;
   width: 100%;
   text-align: center;
@@ -408,8 +409,8 @@ row::after{
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
   .grid {
-    display: grid;
-    grid-template-columns: 50% 50%; 
+    display: block;
+    grid-template-columns: 50% 50%;
     gap: 20px;
     justify-items: center;
   }
@@ -426,7 +427,7 @@ row::after{
   }
 }
 /* For desktops: */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -441,9 +442,10 @@ row::after{
   .col-12 {width: 100%;}
   .grid {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;  
-    gap: 20px;
-    justify-items: center;
+    width: 25%;
+    grid-template-columns: 33.3%,33.3%,33.3%;
+    justify-content: center;
+    gap: 100%;
   }
   .noGap{
     gap: 0px;
